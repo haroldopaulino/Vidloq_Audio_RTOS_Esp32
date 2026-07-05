@@ -2,6 +2,8 @@
 
 Vidloq Audio is the RTOS firmware for the Heltec Wireless Stick Lite v2.1 audio node used by the Vidloq streaming system. The firmware captures audio from an INMP441 I2S microphone and sends continuous raw PCM audio to the Vidloq Stream Server over Wi-Fi.
 
+<img width="1672" height="941" alt="Vidloq_Audio" src="https://github.com/user-attachments/assets/6d27aab9-4fbd-4bd1-9746-552120e9ce27" />
+
 ## What This Project Does
 
 - Connects the Heltec board to a configured Wi-Fi network.
@@ -84,7 +86,7 @@ After flashing, the Heltec board connects to Wi-Fi, opens a TCP connection to `s
 
 If the board does not connect to Wi-Fi, confirm the SSID and password in `main/config.h`.
 
-If flashing fails, confirm `USB_SERIAL_PORT` in `main/config.h` matches the port shown by macOS.
+If flashing fails, confirm `USB_SERIAL_PORT` in `main/config.h` matches the port shown by the OS.
 
 If the server receives no audio, confirm the Vidloq Stream Server is running and listening on TCP port `8001`.
 
